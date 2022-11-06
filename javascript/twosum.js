@@ -9,11 +9,9 @@ var twoSum = function (nums, target) {
     let numA = nums[i];
     for (let j = 1; j < nums.length; j++) {
       let numB = nums[j];
-      if (numA + numB === target) {
-        if (i !== j) {
-          let answer = [i, j];
-          return [i, j];
-        }
+      if (numA + numB === target && i !== j) {
+        let answer = [i, j];
+        return [i, j];
       }
     }
   }
