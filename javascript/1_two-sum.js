@@ -10,7 +10,6 @@ var twoSum = function (nums, target) {
     for (let j = 1; j < nums.length; j++) {
       let numB = nums[j];
       if (numA + numB === target && i !== j) {
-        let answer = [i, j];
         return [i, j];
       }
     }
