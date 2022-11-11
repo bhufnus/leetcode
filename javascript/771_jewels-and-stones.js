@@ -7,11 +7,9 @@
 
 var numJewelsInStones = function (jewels, stones) {
   let total = 0;
-  let jewelArr = jewels.split("");
-
   for (let i = 0; i < stones.length; i++) {
-    for (let j = 0; j < jewelArr.length; j++) {
-      if (stones[i] === jewelArr[j]) {
+    for (let j = 0; j < jewels.length; j++) {
+      if (stones[i] === jewels[j]) {
         total++;
       }
     }
