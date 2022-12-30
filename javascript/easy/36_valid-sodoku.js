@@ -7,10 +7,11 @@
  */
 
 var isValidSudoku = function (board) {
-  if (validateRows(board) && validateColumns(board) && validateBoxes(board)) {
-    return true;
-  }
-  return false;
+  return !!(
+    validateRows(board) &&
+    validateColumns(board) &&
+    validateBoxes(board)
+  );
 };
 
 function validateRows(board) {
